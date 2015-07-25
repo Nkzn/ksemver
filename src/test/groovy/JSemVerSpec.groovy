@@ -1,7 +1,7 @@
 import com.github.zafarkhaja.semver.Version
 import spock.lang.Specification
 
-class SemVerSpec extends Specification {
+class JSemVerSpec extends Specification {
     def 'valueOf() can parse version string'() {
         given:
         String versionStr = '1.0.0-rc.1+build.1'

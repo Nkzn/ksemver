@@ -1,0 +1,4 @@
+package ksemver
+
+class Version {
+}
