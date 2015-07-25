@@ -12,4 +12,8 @@ public class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
+    @Test public void testHello() {
+        Hoge classUnderTest = new Hoge();
+        classUnderTest.hello();
+    }
 }
