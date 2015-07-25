@@ -26,4 +26,8 @@ class KSemVerTest {
         }
     }
 
+    test fun comparable() {
+        assert("1.2.3".ver() > "1.2.2".ver())
+    }
+
 }
