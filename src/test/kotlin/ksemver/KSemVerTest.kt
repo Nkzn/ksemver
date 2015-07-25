@@ -17,6 +17,12 @@ class KSemVerTest {
                 .build()
 
         assert(actual == expected)
+        assert(actual.major == 1)
+        assert(actual.minor == 0)
+        assert(actual.patch == 0)
+        assert(actual.normal == "1.0.0")
+        assert(actual.preRelease == "rc.1")
+        assert(actual.buildMetadata == "build.1")
     }
 
     test fun versionIncrementEffectsPatchVersion() {
