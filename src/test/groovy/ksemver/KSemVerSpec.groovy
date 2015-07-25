@@ -1,4 +1,0 @@
-package ksemver
-
-class KSemVerSpec {
-}
