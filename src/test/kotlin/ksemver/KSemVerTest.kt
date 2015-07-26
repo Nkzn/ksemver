@@ -33,7 +33,16 @@ class KSemVerTest {
     }
 
     test fun comparable() {
-        assert("1.2.3".ver() > "1.2.2".ver())
+        val v1 = "1.0.0-rc.1+build.1".ver()
+        val v2 = "1.3.7+build.2.b8f12d7".ver()
+
+        assert((v1 == v2) == false)
+        assert((v1 != v2) == true)
+
+        assert((v1 > v2) == false)
+        assert((v1 < v2) == true)
+        assert((v1 >= v2) == false)
+        assert((v1 <= v2) == true)
     }
 
 }
