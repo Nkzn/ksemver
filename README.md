@@ -36,12 +36,17 @@ v.toString() // 1.0.1
 
 ### Comparing Versions
 
+Thanks to the jsemver implements `Comparable` and overrides `Object.equals`, Kotlin's [Operator overriding](http://kotlinlang.org/docs/reference/operator-overloading.html) works for `==`, `!=`, `<`, `>`, `<=` and `>=`.
+
 ```kotlin
 val v1 = "1.0.0-rc.1+build.1".ver()
 val v2 = "1.3.7+build.2.b8f12d7".ver()
 
-boolean result = v1 == v2 // false
+val result = v1 == v2   // false
+val result = v1 != v2   // true
 
-boolean result = v1 > v2           // false
-boolean result = v1 < v2)          // true
+val result = v1 > v2    // false
+val result = v1 < v2    // true
+val result = v1 >= v2   // false
+val result = v1 <= v2   // true
 ```
