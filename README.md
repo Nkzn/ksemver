@@ -24,7 +24,7 @@ val build      = v.buildMetadata  // "build.1"
 val versionStr = v.toString() // "1.0.0-rc.1+build.1"
 ```
 
-### Incrementing Versions
+### Incrementing Version
 
 `Version` in ksemver has increment operator(`++`). The `++` increments **Patch version**.
 
